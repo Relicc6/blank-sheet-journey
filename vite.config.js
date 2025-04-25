@@ -18,6 +18,12 @@ export default defineConfig({
       '@pages': '/src/pages'
     }
   },
+  css: {
+    postcss: {
+      // Ensure PostCSS options are passed correctly without modifying the config file
+      plugins: [],
+    }
+  },
   build: {
     outDir: 'dist',
     sourcemap: true,
