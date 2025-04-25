@@ -1,7 +1,11 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Home() {
+  useEffect(() => {
+    console.log('Home component rendered')
+  }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-100">
       <header className="bg-white shadow-sm">
