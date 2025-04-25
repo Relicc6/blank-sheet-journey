@@ -20,9 +20,8 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: false,
+    sourcemap: true,
     minify: true,
-    // Optimize chunks for better performance
     rollupOptions: {
       output: {
         manualChunks: {
